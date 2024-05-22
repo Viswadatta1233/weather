@@ -1,0 +1,4 @@
+.box {
+      width: calc(100% - 40px); /* Adjust width */
+      margin: 10px auto; /* Center horizontally */
+    }

@@ -1,0 +1,156 @@
+.last{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    
+gap:8px;
+    position:absolute;
+    bottom:50px;
+    left:50%;
+    transform:translateX(-50%);
+
+}
+.box{
+    text-align:center;
+    width:300px;
+    height:80px;
+    box-shadow:2px 2px 2px 2px rgb(0,0,0,0.5);
+    padding-top:10px;
+    color:rgb(49, 19, 78) ;
+    border-radius: 10px;
+    
+    
+
+}
+.search{
+    position:absolute;
+    top:15px;
+    left:20px;
+    margin:10px;
+}
+.mainh{
+    position:absolute;
+    top:30px;
+    left:50%;
+    margin:10px;
+}
+#clouds{
+    position: absolute;
+    top:90px;
+    left:50%;
+    margin:5px;
+    transform:translateX(-50%);
+}
+#icon{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:160px;
+    left:50%;
+    margin:5px;
+    margin-top:20px;
+    transform:translateX(-50%);
+    height:150px;
+
+}
+#temp{
+    position:absolute;
+    top:160px;
+    left:50%;
+    margin:5px;
+    margin-top:25px;
+    color:rgb(49, 19, 78);
+    font-weight:bold;
+    font-size:15px;
+    font-size: larger;
+    transform:translateX(-50%);
+
+}
+.inputf{
+background-color: rgb(49, 19, 78);
+color:whitesmoke;
+height: 40px;
+padding:5px;
+border-radius:10px;
+
+}
+#cityname{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(49, 19, 78);
+    text-align: center;
+    padding:5px;
+}
+#date{
+    font-size: medium;
+    font-weight: 500;
+    color:grey;
+}
+.but{
+    padding:5px;
+    text-align: center;
+    background-color: rgb(49, 19, 78);
+color:whitesmoke;
+width:150px;
+padding:5px;
+border-radius: 10px;
+}
+.mainh{
+    transform:translateX(-50%);
+}
+.text{
+    margin-left:5px;
+}
+#fl,#hum,#win,#pres{
+    
+    color:rgb(49, 19, 78);
+    font-weight:bold;
+    font-size:15px;
+}
+@media screen and (max-width: 625px) {
+    .last {
+      grid-template-columns: 1fr; /* Change grid template to single column */
+      bottom: 0px; /* Adjust bottom position */
+      gap:10px;
+      
+    }
+    .box{
+        width:150px;
+        height:50px;
+        padding-bottom:4px;
+    }
+  
+    
+  
+    #icon {
+      top: 130px; /* Adjust top position */
+    }
+  
+    #temp {
+      top: 250px; /* Adjust top position */
+    }
+  
+    .mainh {
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%);
+    }
+  
+    #clouds {
+      top: 120px; /* Adjust top position */
+    }
+  
+    .search {
+      top: 10px; /* Adjust top position */
+      left: 10px; /* Adjust left position */
+    }
+  
+    #cityname {
+      font-size: medium; /* Adjust font size */
+    }
+    #fl,#hum,#win,#pres{
+        position: relative;
+        bottom:2px;
+    }
+  }
+  
